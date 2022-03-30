@@ -1,0 +1,82 @@
+﻿@*John Berthelsen*@
+@*New bowler form*@
+
+@{
+    ViewData["Title"] = "Add Bowler";
+}
+
+@model Mission13.Models.Bowler
+
+<body>
+    <br /><br /><br /><br /><br /><br />
+
+    @*New Bowler Form*@
+    <div class="l-form" style="margin: 70px;">
+        <form method="post" action="" class="form">
+            <h1 class="form__title">New Bowler Form</h1>
+
+            <div asp-validation-summary="All"></div>
+
+            <div class="form__div">
+                <input class="form__input" placeholder=" " asp-for="BowlerFirstName" />
+                <label class="form__label" asp-for="BowlerFirstName">First Name</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input1" placeholder=" " asp-for="BowlerMiddleInit" maxlength="1" />
+                <label class="form__label1" asp-for="BowlerMiddleInit">Middle Initial</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input2" placeholder=" " asp-for="BowlerLastName" />
+                <label class="form__label2" asp-for="BowlerLastName">Last Name</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="BowlerAddress" />
+                <label class="form__label3" asp-for="BowlerAddress">Address</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="BowlerCity" />
+                <label class="form__label3" asp-for="BowlerCity">City</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="BowlerState" />
+                <label class="form__label3" asp-for="BowlerState">State</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="BowlerZip" />
+                <label class="form__label3" asp-for="BowlerZip">Zip</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="BowlerPhoneNumber" />
+                <label class="form__label3" asp-for="BowlerPhoneNumber">Phone Number</label>
+            </div>
+
+            <div class="form__div">
+                <input class="form__input3" placeholder=" " asp-for="TeamID" />
+                <label class="form__label3" asp-for="TeamID">Team ID</label>
+            </div>
+
+            <div style="justify-content: center; align-content: center; align-items: center; display:flex;">
+                <button class="form__button1" asp-area="" asp-controller="Home" asp-action="Index">
+                    Back
+                </button>&nbsp;&nbsp;&nbsp;
+
+                <button type="submit" class="form__button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

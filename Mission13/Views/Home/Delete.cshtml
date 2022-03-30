@@ -1,0 +1,20 @@
+﻿@*John Berthelsen*@
+@*Delete page for bowler*@
+
+@{
+    ViewData["Title"] = "Delete Bowler";
+}
+@model Bowler
+
+<body>
+
+    <h2>Confirm Deletion</h2>
+    <h3>Are you sure you want to delete this bowler?</h3>
+
+    <form method="post" asp-controller="Home" asp-action="Delete">
+        <button type="submit" class="btn btn-danger btn-md">Delete</button>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Go Back</a>
+
+        <input type="hidden" asp-for="BowlerID" />
+    </form>
+</body>
